@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  font-size: 15px;
+  color: #e0e0e0;
+}
+
+.page {
+  background-color: #474B4F;
+}
+
+
+/* Logo and Menu */
+.logo-holder {
+  display: flex;
+  flex: stretch;
+  justify-content: center;
+  padding: 1em;
+  background-color: #222629;
+}
+
+.logo {
+  color: #86C232;
+  font-size: 7em;
+}
+
+.logo-clickable:hover {
+  text-decoration: none;
+}
+
+.bg-light {
+  background-color: #6B6E70 !important;
+}
+.navbar-brand {
+  color: #222629 !important;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  margin: 3em;
+}
+
+
+/* People Page*/
+.person-select {
+  display: flex;
+  flex: 3;
+  justify-content: center;
+  align-items: center;
+}
+
+.person-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.person {
+  flex: 1;
+  color: #222629;
+  font-size: 2em;
+  padding: 1em;
+  background-color: #61892F;
+  border-style: solid;
+  border-color: #222629;
+  border-width: medium;
+  border-top-style: none;
+}
+
+.person-first {
+  border-top-style: solid;
+}
+
+.person-active, .person:hover {
+  background-color: #86C232;
+}
+
+.person:hover {
+  font-size: 2.5em;
+  padding: 0.65em 0.4em 0.65em 0.4em;
+}
+
+.person-content {
+  display: flex;
+  flex: 7;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.person-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2em;
+}
+
+.button {
+  font-size: 2em;
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: #222629;
+  border-style: solid;
+  border-color: #6B6E70;
+  border-width: thin;
+}
+
+.button:hover {
+  background-color: #6B6E70;
+  border-color: #222629;
+  color: #222629;
+  font-size: 2.5em;
+  padding: 0.25em 0.6em 0.25em 0.6em;
+}
+
+.person-name {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.person-name-text {
+  font-size: 3em;
+}
+
+.person-info {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.person-info-text {
+  font-size: 4em;
+}
+
+.links-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+  padding-top: 0em;
+}
+
+.footer-link {
+  color: #a9a9a9;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+
+/* Log Out Page */
+.content-log-out {
+  display: flex;
+  flex-direction: column;
+  margin: 3em;
+  align-items: center;
+}
+
+.passphrase-instructions-holder {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  margin-bottom: 1em;
+}
+
+.passphrase-instructions-text {
+  font-size: 4em;
+}
+
+.passphrase-field-holder {
+  display: flex;
+  width: 50%;
+}
+
+.passphrase-field {
+  width: 100%;
+  border-style: solid;
+  border-color: #222629;
+  border-width: medium;
+}
+
+.passphrase-description-holder {
+  display: flex;
+  margin-top: 2em;
+  margin: 2em 2em 0em 2em;
+}
+
+.passphrase-description-text {
+  text-align: center;
+}
