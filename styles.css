@@ -6,6 +6,15 @@
 
 .page {
   background-color: #474B4F;
+  width: 100%;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
 }
 
 
@@ -38,6 +47,12 @@
   display: flex;
   flex-direction: row;
   margin: 3em;
+}
+
+@media only screen and (max-width: 480px) {
+  .logo {
+    font-size: 2.5em;
+  }
 }
 
 
@@ -148,6 +163,70 @@
   color: white;
 }
 
+@media only screen and (max-width: 480px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .person-list {
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  .person {
+    font-size: 0.7em;
+    padding: 1em;
+    text-align: center;
+    border-top: solid;
+    border-left: none;
+    border-width: medium;
+  }
+
+  .person-first {
+    border-left: solid;
+  }
+
+  .person:hover {
+    font-size: 0.5em;
+    padding: 1em;
+  }
+
+  .person-name-text {
+    font-size: 2em;
+    margin-bottom: 0em;
+  }
+
+  .person-info-text {
+    font-size: 3em;
+    margin-bottom: 0em;
+  }
+
+  .person-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2em;
+  }
+
+  .button {
+    font-size: 1em;
+    padding: 0.5em 1em 0.5em 1em;
+    background-color: #222629;
+    border-style: solid;
+    border-color: #6B6E70;
+    border-width: thin;
+  }
+
+  .button:hover {
+    background-color: #6B6E70;
+    border-color: #222629;
+    color: #222629;
+    font-size: 1.5em;
+    padding: 0.25em 0.6em 0.25em 0.6em;
+  }
+
+}
+
 
 /* Log Out Page */
 .content-log-out {
@@ -161,7 +240,7 @@
   display: flex;
   justify-content: center;
   flex: 1;
-  margin-bottom: 1em;
+  margin: 1em 0em 3em 0em;
 }
 
 .passphrase-instructions-text {
@@ -175,6 +254,9 @@
 
 .passphrase-field {
   width: 100%;
+  height: 1.5em;
+  font-size: 3em;
+  color: #222629;
   border-style: solid;
   border-color: #222629;
   border-width: medium;
@@ -182,10 +264,166 @@
 
 .passphrase-description-holder {
   display: flex;
-  margin-top: 2em;
-  margin: 2em 2em 0em 2em;
+  margin: 4em 6em 1em 6em;
 }
 
 .passphrase-description-text {
   text-align: center;
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 480px) {
+  .content-log-out {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .passphrase-instructions-text {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 0em;
+  }
+
+  .passphrase-field-holder {
+    margin: 0em;
+    padding: 0em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .passphrase-field {
+    width: 5em;
+    height: 1em;
+  }
+
+  .passphrase-description-holder {
+    margin: 3em 0em 0em 0em;
+  }
+
+  .passphrase-description-text {
+    font-size: 1em;
+  }
+}
+
+
+/* About Us Page */
+.content-about-us {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.designer-logo {
+  margin-top: 2.5em;
+  display: flex;
+  width: 35%;
+}
+
+.designer-about {
+  margin: 3em 8em 5em 8em;
+}
+
+.designer-about-text {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+@media only screen and (max-width: 480px) {
+  .designer-logo {
+    width: 80%;
+  }
+
+  .designer-about {
+    margin: 2em;
+  }
+
+  .designer-about-text {
+    font-size: 1em;
+  }
+}
+
+
+/* Edit Page */
+.person-select-edit-page {
+  flex: 1;
+}
+
+.person-add {
+  font-size: 4em;
+  text-align: center;
+  padding: 0em 0em 0.25em 0em;
+  margin: 0em;
+  line-height: 0.5em;
+  background-color: #474B4F;
+}
+
+.person-add:hover {
+  background-color: #6B6E70;
+  font-size: 4em;
+  padding: 0em 0em 0.25em 0em;
+}
+
+.person-edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 2;
+}
+
+.person-edit-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.person-edit-line-description {
+  display: flex;
+  width: 30%;
+  margin: 1em 1em 1em 0em;
+  font-size: 3em;
+  justify-content: flex-end;
+}
+
+.input-field {
+  display: flex;
+  width: 70%;
+  height: 40%;
+}
+
+@media only screen and (max-width: 480px) {
+  .person-list {
+    height: 70%;
+  }
+
+  .person {
+    font-size: 0.5em;
+  }
+
+  .person-add {
+    font-size: 3em;
+  }
+
+  .person-add:hover {
+    font-size: 3em;
+  }
+
+  .person-edit {
+    margin-top: 2.5em;
+  }
+
+  .person-edit-line-description {
+    font-size: 1em;
+    text-align: right;
+    width: 20%;
+  }
+
+  .input-field {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 900px) {
+  .person-edit-line-description {
+    font-size: 2em;
+  }
 }
